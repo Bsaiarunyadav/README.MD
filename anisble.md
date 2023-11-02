@@ -45,5 +45,7 @@ once in 30 min .
     configuration server ---> Ansible server 
 . And directly we can push the configuration .
 
-    ANSIBLE :- 
+### Push mechanism
     
+![alt text](images/pullvspush.jpg)
+
