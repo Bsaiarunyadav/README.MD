@@ -47,7 +47,8 @@ once in 30 min .
 
 ### Push mechanism
     
-![Diagram](c/users/B.Radhaprathap/drawio/ansible_Push.png)
+![Pull vs Push](/images/pullvspush.png "Pull vs Push") 
+
 
 
 
