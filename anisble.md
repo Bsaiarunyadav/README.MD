@@ -47,7 +47,7 @@ once in 30 min .
 
 ### Push mechanism
     
-![alt](/images/pullvspush.png "Pull vs Push") 
+![alt](/images/pullvspush.png) ("Pull vs Push") 
 
 
 
