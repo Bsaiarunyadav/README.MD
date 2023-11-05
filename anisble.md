@@ -24,12 +24,10 @@ Ansible :-
     1) chef 
     2) Puppet
 
-
-                   <----- Node 1 
-    Chef server <---
-                   <----- Node 2.
+![README.MD](Images/pullvspush.jpg) 
 
 ### How the pull mechanism works here ?
+
 * In pull mechanism the nodes will pull the code from the server .
     1) first node will connect to server.
     2) Pull the configuration.
@@ -47,7 +45,16 @@ once in 30 min .
 
 ### Push mechanism
     
-![alt](/images/pullvspush.png) ("Pull vs Push") 
+![README.MD](Images/push.jpg) 
+
+* For example :- Take LIC Used case .
+
+AT ealier times :- 1) You pay to agent .
+                   2)  Agent pay to LIC Office
+
+                   
+
+
 
 
 
