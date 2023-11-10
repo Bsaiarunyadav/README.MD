@@ -1,0 +1,45 @@
+{
+    "name":"Sai arun yadav",
+    "DOB": "17-11-1999",
+    "City": "HYD",
+    "Country": "India"
+}    
+
+#For last one we need no to give ',' as there is no data further .
+
+The same thing in nested format
+
+
+{
+    "name":"Sai arun yadav",
+    "DOB": "17-11-1999",
+    //this is address map,Inside map is everything is keyvalue pair
+    "address":{
+        "City": "HYD",
+        "Country": "India"
+   } 
+}
+
+//How to make the list :- 
+Map is {}
+list is []
+
+{
+    "name":"Sai arun yadav",
+    "DOB": "17-11-1999",
+    //this is address map,Inside map is everything is keyvalue pair
+    "address":[
+        {
+            "City": "HYD",
+            "Country": "India",
+            "Type": "current"
+        },
+        {
+            "City": "HYD",
+            "Country": "India",
+            "Type": "Perm"
+        }
+            
+    ] 
+}
+
