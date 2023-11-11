@@ -19,7 +19,7 @@ Ansible :-
 4) Also it was declerative, No need of sequence in and easy syntax .
 
 ### How it works .
-1) Before ansible there is pull mechanism.
+1) Before ansible there are 2 pull mechanism.
 ---> There are 2 things :- 
     1) chef 
     2) Puppet
@@ -335,11 +335,122 @@ How the system share the details i.e using XML as mentioned below :-
             <Country>india</Country>
             <City>KADAPA</City>
         </person>    
-
+Remeber every thing is key value pair .
 * Here Every thing is value and there is a key between the markups is called as value.
 
 Now I need this format as **NESTED**
 * NESTED :- 
+-genrally we have key ---> What we need is value.
+    In nested :- we will have key 
+    and inside value we will have again key --> value 
+        <person>
+            <Name>Sai arun yadav</Name>
+            <DOB>17-11-1999</DOB>
+            <Address>
+                <Country>india</Country>
+                <City>KADAPA</City>
+            </Address>
+        </person>  
+
+This is more readable foramt and we can add it to any extint
+
+* This XML was used before some years and currently every one was using **Json format JAVA SCRIPT OBJECT NOTATION**
+-
+    {
+        "name":"Sai arun yadav",
+        "DOB": "17-11-1999",
+        "City": "HYD",
+        "Country": "India"
+    }    
+
+    #For last one we need no to give ',' as there is no data further .
+
+    The same thing in nested format
+
+
+    {
+        "name":"Sai arun yadav",
+        "DOB": "17-11-1999",
+        //this is address map,Inside map is everything is keyvalue pair
+        "address":{
+            "City": "HYD",
+            "Country": "India"
+    } 
+    }
+
+    //How to make the list :- 
+    Map is {}
+    list is []
+
+    {
+        "name":"Sai arun yadav",
+        "DOB": "17-11-1999",
+        //this is address map,Inside map is everything is keyvalue pair
+        "address":[
+            {
+                "City": "HYD",
+                "Country": "India",
+                "Type": "current"
+            },
+            {
+                "City": "HYD",
+                "Country": "India",
+                "Type": "Perm"
+            }
+                
+        ] 
+    }
+
+
+- Now **YAML** is becoming more popular genrally for the declarative scripting languages We will use this in the kubernites as well now the same thing how we will mention the YAML ?
+
+In YAMAL indentation was required ---- > Proper gaps/space. (Space matters)
+
+
+**REFFER PERSON.YAML**
+
+
+- NOTE :- In YAML only **KEY_VALUE_PAIR , MAP , LIST** will be available .
+
+And for doing the YAML validation we an google it as YAML VALIDATION.
+
+# Playbook ---> Follows YAML.
+
+#playbook
+    - name: Ping the node #What is the name of the playbook
+    hosts: Mongodb #which host we are connecting (Saved inthe inventory)
+    #this is list of tasks/collections/modules
+    tasks: #What are we doing 
+    - name: pinging the sever #Name of the task to check the ping .
+        #this is map
+        ansible.builtin.ping:
+        #command to check the ping .
+
+* As we discuused before that ansible is one of the scripting :-
+(REFFER CODING.MD)
+
+
+
+#genrally we know what is inheritence.
+# Father ----> earned some property
+# children ---> by default they inherit the property
+# chilren can change the value of property
+# You inherit the values from parent, as a children you can override the values, you can add the values.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

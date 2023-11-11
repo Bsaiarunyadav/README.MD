@@ -1,0 +1,70 @@
+name: sai arun yadav
+dob: 17-11-1999
+#this is map
+address:
+  city: hyd
+  country: india
+  dno: 102
+  street: sankarapuram
+
+# Now the same thing i want to give it as list.
+
+name: sai arun yadav
+dob: 17-11-1999
+#This is map
+address:
+  city: hyd
+  country: india
+  dno: 102
+  street: sankarapuram
+   #this is list of addresses
+addresses:
+- type: perm
+  city: kadapa
+  country: india
+- type: current
+  city: hyd
+  country: india
+
+#Now i want to send the list of address of diff persons :-
+#We already know list always starts with "-"
+
+- name: sai arun yadav
+  dob: 17-11-1999
+ 
+  address:
+    city: hyd
+    country: india
+    dno: 102
+    street: sankarapuram
+    #this is list of addresses
+  addresses:
+  - type: perm
+    city: kadapa
+    country: india
+  - type: current
+    city: hyd
+    country: india
+
+# this is 2nd person
+
+- name: abhinay yadav
+  dob: 17-11-1999
+  #this is map of address
+  address:
+    city: hyd
+    country: india
+    dno: 102
+    street: sankarapuram
+     #this is list of addresses
+  addresses:
+  - type: perm
+    city: kadapa
+    country: india
+  - type: current
+    city: hyd
+    country: india
+
+
+  
+

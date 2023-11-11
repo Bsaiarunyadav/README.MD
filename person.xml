@@ -1,0 +1,18 @@
+<person>
+    <Name>Sai arun yadav</Name>
+    <DOB>17-11-1999</DOB>
+    <Country>india</Country>
+    <City>KADAPA</City>
+</person>
+
+
+NESTED 
+
+        <person>
+            <Name>Sai arun yadav</Name>
+            <DOB>17-11-1999</DOB>
+            <Address>
+                <Country>india</Country>
+                <City>KADAPA</City>
+            </Address>
+        </person>  
