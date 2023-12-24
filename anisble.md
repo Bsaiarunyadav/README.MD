@@ -437,10 +437,72 @@ And for doing the YAML validation we an google it as YAML VALIDATION.
 # chilren can change the value of property
 # You inherit the values from parent, as a children you can override the values, you can add the values.
 
+infra vs configuration (session 21 [01.34.42time])
+
+INFRASTRUCTURES. (without this application cannot run)
+(These are important for inviting any companines and   )
+servers                             
+route53
+databases
+loadbalancers 
+
+Configuration is once creating the server 
+- the work will be inside server what is there 
+- servers creation was not at all recommended .
+
+
+# SESSION 22
+
+We have 2 things 
+1) scripting 
+2) coding 
+
+we knew that in both of the things and we only have 
+
+1) variables
+2) conditions
+3) loops
+4) functions
+5) data types
+
+and we follow a priciple i.e
+DRY :- Dont repeat yourself
+
+As we can see we have lot of code that we use multiple times .(catalogue components in other as same )
+> instead of  this we have a ansible role i.e 
+**ROLE ---> ansible role is the proper directory structure to use the components.**
+
+    roles/
+        common/               # this hierarchy represents a "role"
+            tasks/            #
+                main.yml      #  <-- tasks file can include smaller files if warranted
+            handlers/         #
+                main.yml      #  <-- handlers file
+            templates/        #  <-- files for use with the template resource
+                ntp.conf.j2   #  <------- templates end in .j2
+            files/            #
+                bar.txt       #  <-- files for use with the copy resource
+                foo.sh        #  <-- script files for use with the script resource
+            vars/             #
+                main.yml      #  <-- variables associated with this role
+            defaults/         #
+                main.yml      #  <-- default lower priority variables for this role
+            meta/             #
+                main.yml      #  <-- role dependencies
+            library/          # roles can also include custom modules
+            module_utils/     # roles can also include custom module_utils
+            lookup_plugins/   # or other types of plugins, like lookup in this case
+
+        webtier/              # same kind of structure as "common" was above, done for the webtier role
+        monitoring/           # ""
+        fooapp/               # ""
+
+
+### NOW let us resturcture the anisble roboshop using this best practice and this was a advanced topic ###
 
 
 
-
+ansible-playbook -i inventory -e ansible_user=centos -e ansible_password=DevOps321 ansible-roboshop
 
 
 
