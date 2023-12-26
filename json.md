@@ -1,10 +1,14 @@
+
+`example1.json`
+
+```json
 {
     "name": "Sai arun yadav",
     "DOB": "17-11-1999",
     "City": "HYD",
     "Country": "India"
 }    
-
+```
 {
     "name": "Sai arun yadav",
     "DOB": "17-11-1999",
@@ -15,9 +19,10 @@
     }
 }
 //How to make the list :- 
-Map is {}
-list is []
+- Map is {}
+- list is []
 
+``````
 {
     "name": "Sai arun yadav",
     "DOB": "17-11-1999",
