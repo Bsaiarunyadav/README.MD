@@ -5,9 +5,6 @@
     "Country": "India"
 }    
 
-{last one we need no to give ',' as there is no data further//
-The same thing in nested format}
-
 {
     "name":"Sai arun yadav",
     "DOB": "17-11-1999",
